@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap');
+body {
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background: url("https://source.unsplash.com/random/?city,nature") ;
+    font-family: 'Poppins', sans-serif;
+    background-size: 1920px 1080px!important;
+    opacity: 0.8;
+    color: white;
+    font-size: 115%;
+}
+
+.card {
+    background: #0e0e0e;
+    padding: 2em;
+    border-radius: 24px;
+    width: 100%;
+    max-width: 420px;
+    margin: 1.1em;
+}
+.search {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+button:hover{
+    background: #ffffff9c;
+}
+button {
+    margin: 0.4em;
+    border-radius: 50%;
+    border: none;
+    height: 45px;
+    width: 45.2px;
+    background: #5d5d5d9c;
+    transition: 0.5s;
+}
+
+input#place {
+    border-radius: 24px;
+    border: none;
+    outline: none;
+    padding: 0.35em 1.1em;
+    background: #5d5d5d9c;
+    color: white;
+    font-family: inherit;
+    font-size: 110%;
+    width: calc(100% - 80px);
+}
+
+h1.temp {
+    margin: 0;
+    margin-bottom: 0.4em;
+}
+.description {
+    text-transform: capitalize;
+    margin-left: 8px ;
+}
+
+.flex{
+    display:flex;
+    align-items: left;
+    margin-bottom: 0.4em;
+}
+.weather.loading{
+    visibility: hidden;
+    max-height: 20px;
+    position: relative;
+}
+.weather.loading:after{
+    visibility: visible;
+    content:"Loading...";
+    position: absolute;
+    top: 0;
+    left: 10px;
+}
