@@ -20,7 +20,7 @@ let weather = {
         document.querySelector(".description").innerText= description;
         document.querySelector(".humidity").innerText= "Humidity: "+ humidity + "%";
         document.querySelector(".wind").innerText="WInd speed: "+ speed + " km/h";
-        let URL = "https://source.unsplash.com/1600x900/?"+ name
+        let URL = "https://source.unsplash.com/1600x900/?sky,"+ description 
         document.querySelector("body").style.background = "url('"+ URL +"')";
         document.querySelector(".weather").classList.remove("loading");
     },
